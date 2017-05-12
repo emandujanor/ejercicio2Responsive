@@ -10,8 +10,8 @@ body{
 header{
 	width:100%;
 	height: auto;
-	padding: 2% 5%;
-	background:#036;
+	padding: 1% 5%;
+	background:#de85e2;
 }
 nav{
 	display:flex;
@@ -24,11 +24,11 @@ nav{
 	text-decoration:none;
 	cursor:pointer;
 	color:white;
-	font-size:120%;
+	font-size:1.5rem;
 	padding:3%;
 }
 .links:hover{
-	background-color:#3C9;
+	background-color:#39b1c6;
 }
 
 #contenedorImagen{
@@ -43,13 +43,14 @@ nav{
 	display:flex;
 	align-items:  center;
 	justify-content:center;
-	background-image:url(../img/banner.jpg);
+	background-image:url(../img/banner_flor.jpg);
 	background-size:cover;
 	height:300px;
 }
 #img>h1{
-	color:white;
-	font-size:3em;
+	color:#e84aab;
+	font-size:3rem;
+	text-shadow: 1px 2px #000;
 }
 #articulos{
 	width:100%;
@@ -61,7 +62,7 @@ nav{
 #articulos>h2{
 	justify-content: center;
 	color:purple;
-	font-size:2.5em;
+	font-size:2.5rem;
 	text-align: center;
 }
 #row1{
@@ -128,10 +129,53 @@ nav{
 	width: 40%;
 	height: auto;
 	display:flex;
+	justify-content: center;
 	flex-wrap: wrap;
 	align-items: center;
 }
 #video>iframe{
 max-width:100%;
 height:auto;
+}
+#contenedorFormulario{
+	width:100%;
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+}
+#formulario{
+	width:50%;
+	display:flex;
+	flex-direction: column;
+}
+#email, #nombre{
+	width:50%;
+	display:flex;
+	justify-content: flex-start;
+}
+#enviar{
+	width:20%;
+	min-width: 170px;
+	display:flex;
+	justify-content:center;
+	background-color: #d983ea;
+	padding: 2% 1%;
+	color:#aa0f77;
+	font-size:120%;
+	margin-bottom: 5%;
+}
+footer{
+	width:100%;
+	height: 100px;
+	background-color: #d983ea;
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items::center;
+}
+
+footer>h6{
+	color:#aa0f77;
+	font-size:0.8rem;
+	text-align: center;
 }
