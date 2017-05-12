@@ -5,7 +5,7 @@ body{
 	width:100%;
 	display:flex;
 	flex-direction:column;
-	justify-comtent:center;
+	justify-content:center;
 }
 header{
 	width:100%;
@@ -19,7 +19,7 @@ nav{
 	justify-content: space-between;
 	width:50%;
 }
-	
+
 .links{
 	text-decoration:none;
 	cursor:pointer;
@@ -35,11 +35,103 @@ nav{
 	width:100%;
 	display:flex;
 	justify-content:center;
+	flex-direction: column;
+	align-items:  center;
 }
 #img{
 	width:100%;
 	display:flex;
+	align-items:  center;
 	justify-content:center;
 	background-image:url(../img/banner.jpg);
 	background-size:cover;
+	height:300px;
+}
+#img>h1{
+	color:white;
+	font-size:3em;
+}
+#articulos{
+	width:100%;
+	display:flex;
+	justify-content:center;
+	flex-direction: column;
+	align-content: center;
+}
+#articulos>h2{
+	justify-content: center;
+	color:purple;
+	font-size:2.5em;
+	text-align: center;
+}
+#row1{
+	width:100%;
+	display:flex;
+	justify-content:center;
+	flex-direction: row;
+	align-content: center;
+}
+#contieneImagen1{
+	width:50%;
+	height: auto;
+}
+#articulos img{
+	width: 80%;
+	height: auto;
+}
+#contieneTexto1{
+	width: 50%;
+	display:flex;
+	justify-content:center;
+	flex-direction: column;
+
+}
+
+#row2{
+	width:100%;
+	display:flex;
+	justify-content:center;
+	flex-direction: row;
+	align-content: center;
+}
+#contieneTexto2{
+	width: 50%;
+	display:flex;
+	justify-content:center;
+	flex-direction: column;
+
+}
+#contieneImagen2{
+	width: 50%;
+	height: auto;
+}
+#contenedorVIdeo{
+	width: 100%;
+	height:100%;
+	display:flex;
+	justify-content:center;
+	flex-direction: column;
+	align-items: center;
+	background-color: #d983ea;
+	padding-bottom: 8%;
+}
+#contenedorVIdeo>h2{
+	justify-content: center;
+	color:white;
+	font-size:2.5em;
+	text-align: center;
+	flex-wrap: wrap;
+
+}
+
+#video{
+	width: 40%;
+	height: auto;
+	display:flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+#video>iframe{
+max-width:100%;
+height:auto;
 }
