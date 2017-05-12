@@ -24,9 +24,10 @@ nav{
 	text-decoration:none;
 	cursor:pointer;
 	color:white;
-	font-size:1.5rem;
+	font-size:1.5vw;
 	padding:3%;
 }
+
 .links:hover{
 	background-color:#39b1c6;
 }
@@ -45,11 +46,11 @@ nav{
 	justify-content:center;
 	background-image:url(../img/banner_flor.jpg);
 	background-size:cover;
-	height:300px;
+	padding: 7% 0;
 }
 #img>h1{
 	color:#e84aab;
-	font-size:3rem;
+	font-size:3vw;
 	text-shadow: 1px 2px #000;
 }
 #articulos{
@@ -62,7 +63,7 @@ nav{
 #articulos>h2{
 	justify-content: center;
 	color:purple;
-	font-size:2.5rem;
+	font-size:2.5vw;
 	text-align: center;
 }
 #row1{
@@ -106,7 +107,7 @@ nav{
 	width: 50%;
 	height: auto;
 }
-#contenedorVIdeo{
+#contenedorVideo{
 	width: 100%;
 	height:100%;
 	display:flex;
@@ -116,10 +117,10 @@ nav{
 	background-color: #d983ea;
 	padding-bottom: 8%;
 }
-#contenedorVIdeo>h2{
+#contenedorVideo>h2{
 	justify-content: center;
 	color:white;
-	font-size:2.5em;
+	font-size:2.5vw;
 	text-align: center;
 	flex-wrap: wrap;
 
@@ -134,8 +135,9 @@ nav{
 	align-items: center;
 }
 #video>iframe{
-max-width:100%;
-height:auto;
+	max-width:100%;
+	max-height:100%;
+	height:auto;
 }
 #contenedorFormulario{
 	width:100%;
@@ -161,7 +163,7 @@ height:auto;
 	background-color: #d983ea;
 	padding: 2% 1%;
 	color:#aa0f77;
-	font-size:120%;
+	font-size:2.3vw;
 	margin-bottom: 5%;
 }
 footer{
@@ -176,6 +178,111 @@ footer{
 
 footer>h6{
 	color:#aa0f77;
-	font-size:0.8rem;
+	font-size:0.9vw;
 	text-align: center;
+}
+#menuOcultar{
+	display:none;
+
+}
+#menu{
+	justify-content: center;
+	color:purple;
+	font-size:2.5vw;
+	text-align: center;
+}
+
+@media (max-width: 400px){
+	#menuOcultar{
+		display:flex;
+		flex-direction: column;
+		justify-content: space-around;
+
+	}
+	#menu{
+		justify-content: space-around;
+		color:purple;
+		font-size:3.5vw;
+		text-align: center;
+		width: 80%;
+	}
+	#menu>img{
+		width: 5%;
+		min-width: 30px;
+		height: auto;
+		justify-content: flex-end;
+
+	}
+#articulos{
+	display:none;
+}
+nav{
+	display:none;
+}
+#contenedorVideo{
+	width: 100%;
+	height:100%;
+	display:flex;
+	justify-content:center;
+	flex-direction: column;
+	align-items: center;
+	border:solid #d983ea;
+	padding-bottom: 8%;
+	background-color: white;
+}
+#contenedorVideo>h2{
+	justify-content: center;
+	color:purple;
+	font-size:14pt;
+	text-align: center;
+	flex-wrap: wrap;
+
+}
+
+#video{
+	width: 80%;
+	height: auto;
+	display:flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	align-items: center;
+}
+#video>iframe{
+	max-width:100%;
+	max-height:100%;
+	height:auto;
+}
+#img{
+	width:100%;
+	padding: 10% 0;
+}
+#img>h1{
+	color:#e84aab;
+	font-size:18pt;
+	text-shadow: 1px 2px #000;
+}
+
+#formulario{
+	width:80%;
+	display:flex;
+	flex-direction: column;
+}
+#email, #nombre{
+	width:100%;
+	display:flex;
+	justify-content: flex-start;
+}
+#enviar{
+	width:50%;
+	min-width: 100px;
+	display:flex;
+	justify-content:center;
+	background-color: #d983ea;
+	padding: 2% 1%;
+	color:#aa0f77;
+	font-size:10pt;
+	margin-bottom: 5%;
+}
+
+
 }
