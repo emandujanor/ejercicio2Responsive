@@ -10,7 +10,7 @@ body{
 header{
 	width:100%;
 	height: auto;
-	padding: 1% 5%;
+	padding: 1% 0%;
 	background:#de85e2;
 }
 nav{
@@ -202,7 +202,7 @@ footer>h6{
 	#menu{
 		justify-content: space-around;
 		color:purple;
-		font-size:3.5vw;
+		font-size:14pt;
 		text-align: center;
 		width: 80%;
 	}
@@ -258,7 +258,7 @@ nav{
 }
 #img>h1{
 	color:#e84aab;
-	font-size:18pt;
+	font-size:20pt;
 	text-shadow: 1px 2px #000;
 }
 
@@ -266,6 +266,9 @@ nav{
 	width:80%;
 	display:flex;
 	flex-direction: column;
+}
+#formulario>h2{
+
 }
 #email, #nombre{
 	width:100%;
@@ -283,6 +286,8 @@ nav{
 	font-size:10pt;
 	margin-bottom: 5%;
 }
-
+footer>h6{
+	font-size:9pt;
+}
 
 }
