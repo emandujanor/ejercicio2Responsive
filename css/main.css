@@ -145,6 +145,13 @@ nav{
 	flex-direction: column;
 	align-items: center;
 }
+#contenedorFormulario>h2{
+	justify-content: center;
+	color:purple;
+	font-size:2.5vw;
+	text-align: center;
+	flex-wrap: wrap;
+}
 #formulario{
 	width:50%;
 	display:flex;
@@ -195,8 +202,7 @@ footer>h6{
 @media (max-width: 400px){
 	#menuOcultar{
 		display:flex;
-		flex-direction: column;
-		justify-content: space-around;
+		flex-wrap: nowrap;
 
 	}
 	#menu{
@@ -206,9 +212,8 @@ footer>h6{
 		text-align: center;
 		width: 80%;
 	}
-	#menu>img{
-		width: 5%;
-		min-width: 30px;
+	#menuOcultar>img{
+		width: 30px;
 		height: auto;
 		justify-content: flex-end;
 
@@ -288,6 +293,26 @@ nav{
 }
 footer>h6{
 	font-size:9pt;
+}
+#contenedorFormulario>h2{
+	font-size:14pt;
+}
+}
+
+
+@media (max-width: 700px){
+.links{
+	font-size: 90%;
+}
+
+footer>h6{
+	font-size:90%;
+}
+h2{
+	font-size:90%;
+}
+#contenedorFormulario>h2{
+	font-size:90%;
 }
 
 }
